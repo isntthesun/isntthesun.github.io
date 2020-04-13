@@ -41,7 +41,7 @@ body, html {
 
 }
 
-.under-construction {
+#under-construction {
 
      display: -webkit-box;
      display: -ms-flexbox;
@@ -55,9 +55,35 @@ body, html {
      justify-content: center;
      -webkit-box-align: center;
      -ms-flex-align: center;
-     align-items: center; 
+     align-items: center;
+     margin: 0 auto;
 
 }
+
+.blur {
+
+     position: relative;
+     height: 100vh;
+     width: 100vw;
+     background-color: red;
+     opacity: 0.75;
+     z-index: ;
+
+}
+
+/*.fullscreen-video-bg {
+
+     position: relative;
+     height: 100vh;
+     width: auto;
+     overflow: hidden;
+     position: absolute;
+     left: 50%;
+     margin-left: -50px;
+     top: 50%;
+     margin-top: -50px;
+
+}*/
 
 p {
 
@@ -74,7 +100,7 @@ q {
 p,
 q {
 
-     font-size: 0.85rem;
+     font-size: 1.5rem;
      font-family: 'Helvetica', 'Open-Sans';
      color: white;
      /*transition: linear 0.25s;*/
@@ -86,7 +112,7 @@ q {
      p,
      q {
 
-          font-size: 1.5vw;
+          font-size: 1.25rem;
 
      }
 
@@ -109,6 +135,7 @@ div.pulse {
      min-width: 0px;
      text-align: center;
      text-shadow: 1px 0px 3px #484545;
+     position: absolute;
 }
 
 div.pulse p:last-child {
