@@ -33,7 +33,7 @@ body, html {
      width: 100vw;
      width: auto;
      overflow: hidden;
-     background-image: url('/resources/sun_jpg');
+     background-image: url('/resources/sun_.jpg');
      background-repeat: no-repeat;
      background-attachment: fixed;
      background-position: 40% 50%;
