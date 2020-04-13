@@ -1,0 +1,99 @@
+:root {
+     
+     --kermit-color: rgba(13,94,55, 1) !important;
+     --footer-background-color: rgba(245,240,240, 1);
+
+}
+
+@font-face{ 
+     font-family: 'Kernit-Outline';
+     src: url('/webfonts/Kernit-Outline.eot');
+     src: url('/webfonts/Kernit-Outline?#iefix') format('embedded-opentype'),
+          url('/webfonts/Kernit-Outline.woff') format('woff'),
+          url('/webfonts/Kernit-Outline.woff2') format('woff2')
+}
+
+@font-face{ 
+     font-family: 'Kernit-Filled';
+     src: url('/webfonts/Kernit-Filled.eot');
+     src: url('/webfonts/Kernit-Filled?#iefix') format('embedded-opentype'),
+          url('/webfonts/Kernit-Filled.woff') format('woff'),
+          url('/webfonts/Kernit-Filled.woff2') format('woff2')
+}
+
+@keyframes pulse_animation {
+     0% { transform: scale(1); }
+     50% { transform: scale(1.08); }
+     100% { transform: scale(1); }
+}
+
+body, html {
+
+     height: 100vh;
+     width: 100vw;
+     width: auto;
+     overflow: hidden;
+     background-image: url('/resources/sun_jpg');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: 40% 50%;
+
+
+}
+
+.under-construction {
+
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center; 
+
+}
+
+.pulse {
+
+     animation-name: pulse_animation;
+     animation-duration: 2000ms;
+     transform-origin: 60% 60%;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+
+     font-size: 2rem;
+
+     font-family: 'Helvetica', 'Open-Sans';
+     color: white;
+}
+
+.footer-content {
+
+     font-family: 'Helvetica', 'Open-Sans';
+     color: rgba(0, 0, 0, 1);
+     font-size: 0.75rem;
+     width: 100vw;
+     background-color: var(--footer-background-color);
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -webkit-box-pack: end;
+     -ms-flex-pack: end;
+     justify-content: flex-end;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+     position: fixed;
+     bottom: 0;
+         
+}
