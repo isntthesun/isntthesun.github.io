@@ -61,7 +61,7 @@ body, html {
 
 }
 
-.blur {
+/*.blur {
 
      position: relative;
      height: 100vh;
@@ -70,7 +70,7 @@ body, html {
      opacity: 0.75;
      z-index: ;
 
-}
+}*/
 
 /*.fullscreen-video-bg {
 
@@ -95,6 +95,16 @@ p {
 q {
 
      margin: 2rem 0rem;
+
+}
+
+#application-riddle {
+
+     display: none;
+     align-items: center;
+     justify-content: center;
+     width: 100vw;
+     height: 100vh;
 
 }
 
@@ -131,7 +141,7 @@ p {
 
 }
 
-div.pulse {
+#pulse {
 
      display: flex;
      flex-direction: column;
@@ -149,16 +159,27 @@ div.pulse {
      text-align: center;
      text-shadow: 1px 0px 3px #484545;
      position: absolute;
+     opacity: 0;
+     transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+     -webkit-transition: all 1s ease-in-out;
+
 }
 
-div.pulse p:last-child {
+#pulse.shown {
+
+     opacity: 1;
+
+}
+
+#pulse p:last-child {
 
      padding-top: 1.5rem;
 
 }
 
 .footer-content {
-     
+
      color: rgba(0, 0, 0, 1);
      font-size: 0.75rem;
      width: 100vw;
