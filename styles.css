@@ -29,7 +29,7 @@
 
 body, html {
 
-     height: 100vh;
+     height: 100%;
      width: 100vw;
      width: auto;
      overflow: hidden;
@@ -49,11 +49,11 @@ body, html {
      display: flex;
      -webkit-box-orient: vertical;
      -webkit-box-direction: normal;
-     -ms-flex-direction: row;
-     flex-direction: row;
-     -webkit-box-pack: center;
-     -ms-flex-pack: center;
-     justify-content: center;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -webkit-box-pack: end;
+     -ms-flex-pack: end;
+     justify-content: flex-end;
      -webkit-box-align: center;
      -ms-flex-align: center;
      align-items: center;
@@ -103,8 +103,13 @@ q {
      display: none;
      align-items: center;
      justify-content: center;
-     width: 100vw;
-     height: 100vh;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     flex: 0 1 auto;
+     overflow: scroll;
+     height: 100%;
+     display: flex;
 
 }
 
@@ -145,20 +150,15 @@ p {
 
      display: flex;
      flex-direction: column;
-     align-items: center;
-     justify-content: space-between;
      max-width: 60%;
      height: auto;
-     margin: 0 auto;
+     margin: 1rem 0rem;
      -webkit-order: 1;
      -webkit-flex: 1;
      -webkit-flex: 0 1 auto;
-     text-overflow: ellipsis;
-     overflow: hidden;
-     min-width: 0px;
+     overflow: scroll;
      text-align: center;
      text-shadow: 1px 0px 3px #484545;
-     position: absolute;
      opacity: 0;
      transition: all 1s ease-in-out;
      -moz-transition: all 1s ease-in-out;
@@ -189,18 +189,14 @@ p {
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
-     -webkit-box-orient: vertical;
+     /*-webkit-box-orient: vertical;
      -webkit-box-direction: normal;
      -ms-flex-direction: column;
-     flex-direction: column;
+     flex-direction: column;*/
      -webkit-box-pack: center;
      -ms-flex-pack: center;
      justify-content: center;
-     -webkit-box-align: center;
-     -ms-flex-align: center;
-     align-items: center;
-     position: fixed;
-     bottom: 0;
+     flex: 0 1 auto;
          
 }
 
