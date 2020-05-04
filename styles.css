@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+
+  background-color: #000;
+
+}
+
+.typewriter {
+    font-family: 'VT323', 'Courier New', monospace;
+    display: inline-block;
+    margin: 2rem;
+    padding: 2 rem;
+}
+
+#typewriter-text {
+    color: rgb(71, 175, 238);
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 3.5s steps(11, end), blink 1s step-end infinite;
+    white-space: nowrap;
+    font-size: 24px;
+    font-weight: normal;
+    border-right: 6px solid rgb(71, 175, 238);
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: rgb(71, 175, 238); 
+    }
+}
