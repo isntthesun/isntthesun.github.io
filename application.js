@@ -1,1 +1,63 @@
-var _0xb888=["\x44\x4F\x4D\x43\x6F\x6E\x74\x65\x6E\x74\x4C\x6F\x61\x64\x65\x64","\x23\x74\x79\x70\x65\x77\x72\x69\x74\x65\x72\x2D\x74\x65\x78\x74","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72\x41\x6C\x6C","\x67\x65\x74\x54\x69\x6D\x65","\x4D\x61\x79\x20\x30\x35\x2C\x20\x32\x30\x32\x30\x20\x31\x35\x3A\x30\x30\x3A\x30\x30","\x66\x6C\x6F\x6F\x72","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x74\x79\x70\x65\x77\x72\x69\x74\x65\x72\x2D\x74\x65\x78\x74","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x2E","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x74\x68\x61\x6E\x6B\x20\x79\x6F\x75","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x6F\x6E\x6C\x6F\x61\x64","\x73\x74\x6F\x70\x50\x72\x6F\x70\x61\x67\x61\x74\x69\x6F\x6E","\x65\x76\x65\x6E\x74","\x63\x61\x6E\x63\x65\x6C\x42\x75\x62\x62\x6C\x65","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x63\x6F\x6E\x74\x65\x78\x74\x6D\x65\x6E\x75","\x6B\x65\x79\x64\x6F\x77\x6E","\x63\x74\x72\x6C\x4B\x65\x79","\x73\x68\x69\x66\x74\x4B\x65\x79","\x6B\x65\x79\x43\x6F\x64\x65","\x4D\x61\x63","\x6D\x61\x74\x63\x68","\x70\x6C\x61\x74\x66\x6F\x72\x6D","\x6D\x65\x74\x61\x4B\x65\x79"];document[_0xb888[12]](_0xb888[0],function(_0x1558x1){document[_0xb888[2]](_0xb888[1]);let _0x1558x2= new Date(_0xb888[4])[_0xb888[3]](),_0x1558x3=setInterval(function(){let _0x1558x1=( new Date)[_0xb888[3]](),_0x1558x4=_0x1558x2- _0x1558x1;var _0x1558x5=Math[_0xb888[5]](_0x1558x4/ 864e5),_0x1558x6=Math[_0xb888[5]](_0x1558x4% 864e5/ 36e5),_0x1558x7=Math[_0xb888[5]](_0x1558x4% 36e5/ 6e4),_0x1558x8=Math[_0xb888[5]](_0x1558x4% 6e4/ 1e3);document[_0xb888[8]](_0xb888[7])[_0xb888[6]]= _0x1558x5+ _0xb888[9]+ _0x1558x6+ _0xb888[9]+ _0x1558x7+ _0xb888[9]+ _0x1558x8,_0x1558x4< 0&& (clearInterval(_0x1558x3),document[_0xb888[10]](_0xb888[1])[_0xb888[6]]= _0xb888[11])},1e3)}),window[_0xb888[13]]= function(){function _0x1558x1(_0x1558x1){return _0x1558x1[_0xb888[14]]?_0x1558x1[_0xb888[14]]():window[_0xb888[15]]&& (window[_0xb888[15]][_0xb888[16]]=  !0),_0x1558x1[_0xb888[17]](),!1}document[_0xb888[12]](_0xb888[18],function(_0x1558x1){_0x1558x1[_0xb888[17]]()},!1),document[_0xb888[12]](_0xb888[19],function(_0x1558x2){_0x1558x2[_0xb888[20]]&& _0x1558x2[_0xb888[21]]&& 73== _0x1558x2[_0xb888[22]]&& _0x1558x1(_0x1558x2),_0x1558x2[_0xb888[20]]&& _0x1558x2[_0xb888[21]]&& 74== _0x1558x2[_0xb888[22]]&& _0x1558x1(_0x1558x2),83== _0x1558x2[_0xb888[22]]&& (navigator[_0xb888[25]][_0xb888[24]](_0xb888[23])?_0x1558x2[_0xb888[26]]:_0x1558x2[_0xb888[20]])&& _0x1558x1(_0x1558x2),_0x1558x2[_0xb888[20]]&& 85== _0x1558x2[_0xb888[22]]&& _0x1558x1(_0x1558x2),123== event[_0xb888[22]]&& _0x1558x1(_0x1558x2)},!1)}
+document.addEventListener('DOMContentLoaded',function(event){
+	var timerWrapper = document.querySelectorAll("#typewriter-text");
+  	const second = 1000,
+      	minute = second * 60,
+      	hour = minute * 60,
+      	day = hour * 24;
+
+	let countDown = new Date('May 05, 2020 15:00:00').getTime(),
+	x = setInterval(function() {    
+
+	 	let now = new Date().getTime(),
+	     distance = countDown - now;
+
+  		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  		document.getElementById("typewriter-text").innerHTML = days + "." + hours + "." + minutes + "." + seconds;
+
+	 	if (distance < 0) {
+	  		clearInterval(x);
+	  		document.querySelector("#typewriter-text").innerHTML = "<a href='https://forms.gle/Zg8NQfSzFARjKcKb7' id='new-link' target='_blank'>Come and talk to us. Find the truth.</a>";
+        document.querySelector("#typewriter-text").classList.remove('active');
+        document.querySelector("#new-link").classList.add('active');
+        document.querySelector("#footer-content").classList.add('active');
+
+	 	}
+
+	}, second);
+});
+
+window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+};
